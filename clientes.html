@@ -37,12 +37,12 @@
 	     <div id="top" class="row">
 
 		    <div class="col-md-3">
-		        <h2>Tickets</h2>
+		        <h2>Clientes</h2>
 		    </div>
  
 		    <div class="col-md-6">
 		        <div class="input-group h2">
-		            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Buscar Tickets">
+		            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Buscar Clientes">
 		            <span class="input-group-btn">
                 		<button class="btn btn-primary" type="submit">
 		                    <span class="glyphicon glyphicon-search"></span>
@@ -52,7 +52,7 @@
 		    </div>
  
 		    <div class="col-md-3">
-		        <a href="add.html" class="btn btn-primary pull-right h2">Nuevo Ticket</a>
+		        <a href="add.html" class="btn btn-primary pull-right h2">Nuevo Cliente</a>
 		    </div>
  
 	     </div> <!-- /#top -->
@@ -64,9 +64,9 @@
 		            <thead>
                 		<tr>
 		                    <th>ID</th>
-                		    <th>Cliente</th>
-		                    <th>Vendedor</th>
-                		    <th>Fecha</th>
+                		    <th>Nombre</th>
+		                    <th>Tipo Documento</th>
+                		    <th>Nro Documento</th>
 		                    <th class="actions">Ações</th>
 		                 </tr>
 		            </thead>
@@ -74,34 +74,31 @@
                 		<tr>
 		                    <td>1001</td>
                 		    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-		                    <td>Jes</td>
-                		    <td>01/01/2015</td>
+		                    <td>DNI</td>
+                		    <td>20230080217</td>
 		                    <td class="actions">
                 		        <a class="btn btn-success btn-xs" href="view.html">Ver</a>
 		                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                		        <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Borrar</a>
 		                    </td>
 		                </tr>
                 		<tr>
 		                    <td>1002</td>
                 		    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-		                    <td>Jes</td>
-                		    <td>01/01/2015</td>
+		                    <td>CUIT</td>
+                		    <td>30712007288</td>
 		                    <td class="actions">
                 		        <a class="btn btn-success btn-xs" href="view.html">Ver</a>
 		                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                		        <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Borrar</a>
 		                    </td>
 		                </tr>
                 		<tr>
 		                    <td>1003</td>
                 		    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-		                    <td>Jes</td>
-                		    <td>01/01/2015</td>
+		                    <td>CUIT</td>
+                		    <td>123456789</td>
 		                    <td class="actions">
                 		        <a class="btn btn-success btn-xs" href="view.html">Ver</a>
 		                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-                		        <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Borrar</a>
 		                    </td>
 		                </tr>
 		            </tbody>
@@ -124,24 +121,6 @@
 		    </div>
 
 	     </div> <!-- /#bottom -->
-
-		<!-- Modal -->
-		<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-		    <div class="modal-dialog" role="document">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
-                		<h4 class="modal-title" id="modalLabel">Borrar Item</h4>
-		            </div>
-		            <div class="modal-body">Desea realmente borrar este item? </div>
-			            <div class="modal-footer">
-			                <button type="button" class="btn btn-primary">Si</button>
-			                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-			            </div>
-			    </div>
-			</div>
-		</div>
-
 
 	 </div>  <!-- /#main -->
 </body>
